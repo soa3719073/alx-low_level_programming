@@ -1,42 +1,37 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - Prints the n times table
- * @n: number times table (0 < n <= 15)
- * Return: no return
+ * print_times_table - prints times table from 1 to 15
+ * Return: none
+ * @n: takes the value of numbers
 */
 void print_times_table(int n)
 {
-int a, b, op;
-if (n >= 0 && n <= 15)
+int x, y, mul;
+if (n <= 15 && n >= 0)
 {
-for (a = 0; a <= n; a++)
+for (x = 0; x <= n; x++)
 {
-_putchar(48);
-for (b = 1; b <= n; b++)
+_putchar('0');
+for (y = 1; y <= n; y++)
 {
-op = a * b;
-_putchar(44);
-_putchar(32);
-if (op <= 9)
+_putchar(',');
+_putchar(' ');
+mul = x * y;
+if (mul < 100)
+_putchar(' ');
+if (mul <= 9)
+_putchar(' ');
+if (mul >= 100)
 {
-_putchar(32);
-_putchar(32);
-_putchar(op + 48);
+_putchar((mul / 100) + '0');
+_putchar((mul / 10) % 10 + '0');
 }
-else if (op <= 99)
+else if (mul < 100 && mul >= 10)
 {
-_putchar(32);
-_putchar((op / 10) + 48);
-_putchar((op % 10) + 48);
+_putchar((mul / 10) + '0');
 }
-else
-{
-_putchar(((op / 100) % 10) + 48);
-_putchar(((op / 10) % 10) + 48);
-_putchar((op % 10) + 48);
-}
+_putchar((mul % 10) + '0');
 }
 _putchar('\n');
 }
