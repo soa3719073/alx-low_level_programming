@@ -5,7 +5,7 @@
  *@src: pointer that has the string to be concatenated
  *@dest: pointer that will have its string concatenated with the other
  *Return: strings concatenated to dest
- */
+*/
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
