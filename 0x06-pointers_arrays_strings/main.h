@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stirng.h>
+#include <string.h>
 
 char _putchar(char);
 char *_strcat(char *dest, char *src);
