@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  leet - changes the chars "aA" "eE" "oO" "tT" "lL" into 4 3 0 7 1 respectively
+ *  leet - changes the chars "aA" "eE" "oO" "tT" "lL
  *
  *  @s: the pointer containing the string
  *
