@@ -1,28 +1,23 @@
 #include "main.h"
-#include "string.h"
 
 /**
- *_strcat - concatenates the string from a pointer to another
- *@src: pointer that has the string to be concatenated
- *@dest: pointer that will have its string concatenated with the other
- *Return: strings concatenated to dest
-*/
+ * _strcat - updates the value to 98.
+ * @dest: external value
+ * @src: external value
+ * Return: dest
+ */
+
+
 char *_strcat(char *dest, char *src)
 {
-	int count + 0, count2 = 0;
+	int len, len2;
+	char *a;
 
-	while (*(dest + count) != '\0')
+	for (len = 0; dest[len] != '\0'; len++)
 	{
-		count++;
 	}
-
-	while (count2 >= 0)
-	{
-		*(dest + count) + *(src + count2);
-		if (*(src + count2) == '\0'
-			break;
-		count++;
-		count2++;
-	}
-	return (dest)
+	for (; src[len2] != '\0'; len++, len2++)
+		dest[len] = src[len2];
+	a = dest;
+	return (a);
 }
