@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  *  _strcat - updates the value to 98.
@@ -10,16 +9,35 @@
  *
  *  Return: dest
 */
-char *_strcat(char *dest, char *src)
-{
-int len, len2;
-char *a;
 
-for (len = 0; dest[len] != '\0'; len++)
+int _strlen(char *s)
 {
+	int len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+
+	return (len);
 }
-for (; src[len2] != '\0'; len++, len2++)
-dest[len] = src[len2];
-a = dest;
-return (a);
+
+/**
+ * _strcat - concatenates two strings
+ * @dest: copy source to this buffer
+ * @src: source to copy
+ * Return: concatenate strings
+ */
+cchar *_strcat(char *dest, char *src)
+{
+	int i, d;
+
+	i =  _strlen(dest);
+
+	for (d = 0; src[d] != '\0'; i++, d++)
+	{
+		dest[i] = src[d];
+	}
+	dest[i] = '\0';
+return (dest);
 }
