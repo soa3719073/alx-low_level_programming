@@ -5,7 +5,6 @@
  * @rot: encode rot 13
  * Return: decode result
  */
-
 char *rot13(char *rot)
 {
 	int i = 0, j = 0;
