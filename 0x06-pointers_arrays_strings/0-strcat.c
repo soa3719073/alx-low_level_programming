@@ -1,21 +1,35 @@
 #include "main.h"
 
 /**
- * _strcat - updates the value to 98.
- * @dest: external value
- * @src: external value
+ * _strncat - concatenate two strings
+ *
+ * using at most n bytes from src
+ *
+ * @dest: input value
+ *
+ * @src: input value
+ *
+ * @n: input value
+ *
  * Return: dest
 */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-int len, len2;
-char *a;
+	int i;
+	int j;
+	i = 0;
 
-for (len = 0; dest[len] != '\0'; len++)
-{
-}
-for (; src[len2] != '\0'; len++, len2++)
-dest[len] = src[len2];
-a = dest;
-return (a);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
