@@ -1,1 +1,2 @@
-C files embeded in scripts according to various assignment task
+more pio
+nters task for C programing
